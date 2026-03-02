@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Message for You</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+<div class="wrapper">
+    <header>
+        <h1>I'm Sorry I Missed You</h1>
+        <p>I built this because I wanted to explain what happened clearly. I value you more than anything.</p>
+    </header>
+
+    <div class="grid">
+        <div class="card" onclick="reveal(this)">
+            <span class="placeholder">⏰</span>
+            <span class="hidden-text"><strong>9:56 AM:</strong> I was right there on the call ready to wake you up. I didn't forget my promise!</span>
+        </div>
+        <div class="card" onclick="reveal(this)">
+            <span class="placeholder">🔇</span>
+            <span class="hidden-text"><strong>The Mute Mistake:</strong> I played ML with friends because I was bored, but I accidentally left my phone on mute. I didn't hear a single call.</span>
+        </div>
+        <div class="card" onclick="reveal(this)">
+            <span class="placeholder">💔</span>
+            <span class="hidden-text"><strong>3:00 PM:</strong> The moment I saw the missed calls, I felt terrible. I never wanted to make you feel ignored.</span>
+        </div>
+    </div>
+
+    <div class="letter">
+        <div class="status-tag">INCIDENT REPORT</div>
+        <h3>To my dearest,</h3>
+        <p>I know you’re mad, and you have every right to be. When you woke up and couldn't reach me, it must have felt like I didn't care. But I want you to know the truth.</p>
+        
+        <p>I stayed on the call until <strong>9:56 AM</strong> to wake you up. Since I had things to do and you were still resting, I hung up. Later, I started playing <em>Mobile Legends</em> with my friends to pass the time. <strong>My biggest mistake was having my phone on mute.</strong></p>
+        
+        <p>I didn't see your calls at 12 PM or anytime after until 3 PM. I wasn't hanging up on you or ignoring you; I honestly didn't know you were calling. Seeing all those missed calls made me realize how much I messed up by not paying attention.</p>
+        
+        <p>I love you so much. I don't want to break up over a phone being on silent and a video game. You are my priority, and I’m so sorry for the worry and anger I caused you.</p>
+        
+        <p>Please give me a chance to talk to you. I'm waiting for whenever you're ready to pick up. ❤️</p>
+    </div>
+
+    <footer>Made with love & total honesty just for you.</footer>
+</div>
+
+<script>
+    function reveal(card) {
+        const placeholder = card.querySelector('.placeholder');
+        const text = card.querySelector('.hidden-text');
+        
+        if (text.style.display === 'block') {
+            text.style.display = 'none';
+            placeholder.style.display = 'block';
+            card.style.background = 'white';
+        } else {
+            text.style.display = 'block';
+            placeholder.style.display = 'none';
+            card.style.background = '#fff0f3';
+        }
+    }
+</script>
+
+</body>
+</html>
