@@ -1,91 +1,128 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>A Message for You</title>
-    <link rel="icon" type="image/png" href="img/favicon.png">
-    <link rel="stylesheet" href="styles.css">
-
-</head>
-<body>
-
-<div class="wrapper">
-    <header>
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
         <h1>I'm Sorry I Missed You</h1>
-        <p>I built this because I wanted to explain what happened clearly. I value you more than anything.</p>
-    </header>
+        <p>
+          I built this because I wanted to explain what happened clearly. I
+          value you more than anything.
+        </p>
+      </header>
 
-<div class="grid">
-    <div class="card" onclick="reveal(this)">
-        <div class="placeholder">
+      <div class="grid">
+        <div class="card" onclick="reveal(this)">
+          <div class="placeholder">
             <span class="emoji">⏰</span>
             <span class="hint">Click to reveal</span>
+          </div>
+          <span class="hidden-text"
+            ><strong>9:56 AM:</strong> I was right there on the call ready to
+            wake you up. I didn't forget my promise!</span
+          >
         </div>
-        <span class="hidden-text"><strong>9:56 AM:</strong> I was right there on the call ready to wake you up. I didn't forget my promise!</span>
-    </div>
 
-    <div class="card" onclick="reveal(this)">
-        <div class="placeholder">
+        <div class="card" onclick="reveal(this)">
+          <div class="placeholder">
             <span class="emoji">🔇</span>
             <span class="hint">Click to reveal</span>
+          </div>
+          <span class="hidden-text"
+            ><strong>The Mute Mistake:</strong> I played ML with friends because
+            I was bored, but I accidentally left my phone on mute. I didn't hear
+            a single call.</span
+          >
         </div>
-        <span class="hidden-text"><strong>The Mute Mistake:</strong> I played ML with friends because I was bored, but I accidentally left my phone on mute. I didn't hear a single call.</span>
-    </div>
 
-    <div class="card" onclick="reveal(this)">
-        <div class="placeholder">
+        <div class="card" onclick="reveal(this)">
+          <div class="placeholder">
             <span class="emoji">💔</span>
             <span class="hint">Click to reveal</span>
+          </div>
+          <span class="hidden-text"
+            ><strong>3:00 PM:</strong> The moment I saw the missed calls, I felt
+            terrible. I never wanted to make you feel ignored.</span
+          >
         </div>
-        <span class="hidden-text"><strong>3:00 PM:</strong> The moment I saw the missed calls, I felt terrible. I never wanted to make you feel ignored.</span>
+      </div>
+
+      <div class="letter">
+        <div class="status-tag">
+          📄 Incident Report: The Mute Button Mistake
+        </div>
+
+        <h3>To my dearest,</h3>
+
+        <p>
+          I know you’re upset, and I want you to know that I completely
+          understand why. When you woke up and couldn't reach me, it must have
+          felt like I had just disappeared or, worse, that I didn't care. That
+          is the last thing I ever want you to feel.
+        </p>
+
+        <div class="letter-divider"></div>
+
+        <p>
+          I want to be honest about my day: I stayed on our call until
+          <strong>9:56 AM</strong> specifically to wake you up. Since you were
+          still resting so peacefully, I eventually hung up to get some things
+          done. Later on, I hopped onto <em>Mobile Legends</em> with the guys
+          just to pass the time; but
+          <strong>my biggest mistake was leaving my phone on mute.</strong>
+        </p>
+
+        <p>
+          I didn't see your calls at 12 PM, or any of the ones that followed,
+          until 3 PM. I wasn't hanging up on you, and I would never
+          intentionally ignore you. I simply didn't know the world was calling.
+          Seeing those missed calls later made my heart sink because I realized
+          I wasn't there when you reached out.
+        </p>
+
+        <div class="letter-divider"></div>
+
+        <p>
+          I love you so much. I don't want us to end over a silent phone and a
+          game. You are, and always will be, my <strong>priority</strong>. I am
+          so sorry for the worry, the anger, and the silence I caused you today.
+        </p>
+
+        <p>
+          I’m waiting right here. Whenever you're ready to talk, I’m ready to
+          listen. ❤️
+        </p>
+
+        <div class="signature">
+          <p>Always yours,</p>
+          <p class="name">Joe❤️</p>
+        </div>
+      </div>
+
+      <footer>Made with love & total honesty just for you.</footer>
     </div>
-</div>
 
-<div class="letter">
-    <div class="status-tag">📄 Incident Report: The Mute Button Mistake</div>
-    
-    <h3>To my dearest,</h3>
-    
-    <p>I know you’re upset, and I want you to know that I completely understand why. When you woke up and couldn't reach me, it must have felt like I had just disappeared or, worse, that I didn't care. That is the last thing I ever want you to feel.</p>
-    
-    <div class="letter-divider"></div>
+    <script>
+      function reveal(card) {
+        const placeholder = card.querySelector(".placeholder");
+        const text = card.querySelector(".hidden-text");
 
-    <p>I want to be honest about my day: I stayed on our call until <strong>9:56 AM</strong> specifically to wake you up. Since you were still resting so peacefully, I eventually hung up to get some things done. Later on, I hopped onto <em>Mobile Legends</em> with the guys just to pass the time; but <strong>my biggest mistake was leaving my phone on mute.</strong></p>
-    
-    <p>I didn't see your calls at 12 PM, or any of the ones that followed, until 3 PM. I wasn't hanging up on you, and I would never intentionally ignore you. I simply didn't know the world was calling. Seeing those missed calls later made my heart sink because I realized I wasn't there when you reached out.</p>
-
-    <div class="letter-divider"></div>
-
-    <p>I love you so much. I don't want us to end over a silent phone and a game. You are, and always will be, my <strong>priority</strong>. I am so sorry for the worry, the anger, and the silence I caused you today.</p>
-    
-    <p>I’m waiting right here. Whenever you're ready to talk, I’m ready to listen. ❤️</p>
-
-    <div class="signature">
-        <p>Always yours,</p>
-        <p class="name">Joe❤️</p>
-    </div>
-</div>
-
-    <footer>Made with love & total honesty just for you.</footer>
-</div>
-
-<script>
-    function reveal(card) {
-        const placeholder = card.querySelector('.placeholder');
-        const text = card.querySelector('.hidden-text');
-        
-        if (text.style.display === 'block') {
-            text.style.display = 'none';
-            placeholder.style.display = 'block';
-            card.style.background = 'white';
+        if (text.style.display === "block") {
+          text.style.display = "none";
+          placeholder.style.display = "block";
+          card.style.background = "white";
         } else {
-            text.style.display = 'block';
-            placeholder.style.display = 'none';
-            card.style.background = '#fff0f3';
+          text.style.display = "block";
+          placeholder.style.display = "none";
+          card.style.background = "#fff0f3";
         }
-    }
-</script>
-
-</body>
+      }
+    </script>
+  </body>
 </html>
